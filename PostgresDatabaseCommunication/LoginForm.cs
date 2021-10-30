@@ -47,7 +47,7 @@ namespace PostgresDatabaseCommunication
             if (UserText.Text == comm.CommandText && PassText.Text == comm1.CommandText )
              {
                 MessageBox.Show($"Login Successful");
-                EnterEntries Entries = new EnterEntries();
+                Form2 Entries = new Form2();                
                 Entries.Show();
              }
             comm.Dispose();

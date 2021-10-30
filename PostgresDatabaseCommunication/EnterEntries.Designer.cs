@@ -1,7 +1,9 @@
 ﻿
+using System;
+
 namespace PostgresDatabaseCommunication
 {
-    partial class Form2
+    partial class Entries
     {
         /// <summary>
         /// Required designer variable.
@@ -63,6 +65,7 @@ namespace PostgresDatabaseCommunication
             this.AddButton.TabIndex = 0;
             this.AddButton.Text = "Add New";
             this.AddButton.UseVisualStyleBackColor = true;
+            this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
             // 
             // UpdateButton
             // 
@@ -72,6 +75,7 @@ namespace PostgresDatabaseCommunication
             this.UpdateButton.TabIndex = 1;
             this.UpdateButton.Text = "Update";
             this.UpdateButton.UseVisualStyleBackColor = true;
+            this.UpdateButton.Click += new System.EventHandler(this.UpdateButton_Click);
             // 
             // DeleteButton
             // 
@@ -81,6 +85,7 @@ namespace PostgresDatabaseCommunication
             this.DeleteButton.TabIndex = 2;
             this.DeleteButton.Text = "DeleteUser";
             this.DeleteButton.UseVisualStyleBackColor = true;
+            this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
             // 
             // Name
             // 
@@ -262,7 +267,7 @@ namespace PostgresDatabaseCommunication
             this.ClearButton.UseVisualStyleBackColor = true;
             this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
             // 
-            // Form2
+            // Entries
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -291,8 +296,8 @@ namespace PostgresDatabaseCommunication
             this.Controls.Add(this.DeleteButton);
             this.Controls.Add(this.UpdateButton);
             this.Controls.Add(this.AddButton);
-            this.Name = "Form2";
-            this.Text = "Form2";
+            this.Name = "Entries";
+            this.Text = "Entries";
             this.ResumeLayout(false);
             this.PerformLayout();
 
